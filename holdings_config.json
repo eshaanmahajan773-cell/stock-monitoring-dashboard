@@ -1,0 +1,43 @@
+{
+  "holdings": {
+    "MSTR": "NASDAQ",
+    "TSM": "NYSE",
+    "LMT": "NYSE",
+    "AAPL": "NASDAQ",
+    "MSFT": "NASDAQ",
+    "GOOGL": "NASDAQ",
+    "AMZN": "NASDAQ",
+    "NVDA": "NASDAQ",
+    "META": "NASDAQ",
+    "TSLA": "NASDAQ",
+    "JPM": "NYSE",
+    "HOOD": "NASDAQ",
+    "AVGO": "NASDAQ",
+    "MU": "NASDAQ",
+    "UAL": "NYSE",
+    "COIN": "NASDAQ",
+    "IBIT": "NASDAQ",
+    "QQQ": "NASDAQ"
+  },
+  "symbols": [
+    "MSTR:NASDAQ", "TSM:NYSE", "LMT:NYSE", "AAPL:NASDAQ", "MSFT:NASDAQ",
+    "GOOGL:NASDAQ", "AMZN:NASDAQ", "NVDA:NASDAQ", "META:NASDAQ", "TSLA:NASDAQ",
+    "JPM:NYSE", "HOOD:NASDAQ", "AVGO:NASDAQ", "MU:NASDAQ", "UAL:NYSE",
+    "COIN:NASDAQ", "IBIT:NASDAQ", "QQQ:NASDAQ"
+  ],
+  "alert_email": "eshaanmahajan773@gmail.com",
+  "timezone": "America/Chicago",
+  "thresholds": {
+    "price_break_percent": 2.0,
+    "rsi_overbought": 70,
+    "rsi_oversold": 30,
+    "volume_spike_multiplier": 2.0,
+    "emergency_alert_min_holdings": 3,
+    "min_data_quality_threshold": 15
+  },
+  "market_hours": {
+    "start": "08:30",
+    "end": "15:00",
+    "timezone": "CST"
+  }
+}

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  stock-monitor:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - COMPOSIO_API_KEY=${COMPOSIO_API_KEY}
+    volumes:
+      - ./:/app
+    restart: unless-stopped
