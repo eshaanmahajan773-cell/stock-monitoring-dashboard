@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify
 from flask_cors import CORS
 import json
@@ -188,4 +189,6 @@ if __name__ == '__main__':
     print("📡 API: http://localhost:5000/api/stocks")
     print("="*60 + "\n")
     
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    # Read PORT from environment variable, default to 5000 for local dev
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
